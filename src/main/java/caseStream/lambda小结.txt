@@ -1,0 +1,37 @@
+
+stream流一般是针对集合或者数组；
+集合都可以通过stream流进行数据的处理；
+stream流中的方法基本是调用函数式方法；
+stream流涉及的方法：filter foreach  skip  limit  map（多熟悉）   count  concat（多熟悉）
+注意：其中stream流只能使用一次  不能多次使用
+      map可以用来做数据转换
+      concat将多个流合成一个stream流
+
+
+函数时接口：具体可以去看rt.jar包下的function类
+supplier  get
+supplier是生产型函数式接口，因为里面就一个get方法，并且有返回值，且返回类型为泛型
+
+
+consumer  andThen
+consumer是消费型函数式接口，里面包含accept方法，接受的参数是泛型；
+                            还有一个是andThen方法，可以一个参数被多个consumer消费
+
+
+predicate test and  or  negate isEqual
+predicate是判断型函数式接口   test返回的是boolean值
+                             and是多个结果都成立
+                             or部分结果成立
+
+
+
+function  andThen
+
+方法引用：基本条件是1：类存在 2：方法存在
+对象方法引用
+静态方法引用
+父类方法引用
+this方法引用
+构造方法引用
+
+
